@@ -1,10 +1,15 @@
 cmake_minimum_required(VERSION 3.6)
 
-project(mylib  LANGUAGES CXX)
+project(graphprim  LANGUAGES CXX)
 
 add_library(${PROJECT_NAME}
-    include/mylib.hpp
-    src/mylib.cpp
+    include/graphicsitem.hpp
+    include/lineitem.hpp
+    include/point.hpp
+    include/rect.hpp
+    include/ipainter.hpp
+    src/graphicsitem.cpp
+    src/lineitem.cpp
 )
 
 if (${BUILD_TESTING})
