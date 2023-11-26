@@ -48,6 +48,11 @@ public:
     /// @param doc редактируемый документ(модель)
     void setDocument(std::shared_ptr<Document> doc);
 
+    /// @brief удаление элемента
+    /// @param index порядковый номер элемента в документе
+    /// @return true, если элемент удалён, иначе false
+    bool removeItem(const std::size_t index);
+
 private:
     std::shared_ptr<graphpr::IPainter> painter() const;
     std::unique_ptr<hw::DocEditor> m_editor;

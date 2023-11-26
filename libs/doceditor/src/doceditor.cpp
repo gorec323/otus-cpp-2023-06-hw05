@@ -28,7 +28,7 @@ bool DocEditor::importFromFile(std::filesystem::path &&fileName)
             m_document->setGraphicsItems(std::move(items));
         else
             m_document->reset();
-            
+
         return res;
     }
     return false;
@@ -63,4 +63,12 @@ void DocEditor::setDocument(std::shared_ptr<Document> doc)
 {
     m_document = doc;
 }
+bool DocEditor::removeItem(const std::size_t index)
+{
+    if (m_document)
+        return m_document->removeItem(index);
+
+    return false;
+}
+
 }

@@ -72,4 +72,10 @@ std::shared_ptr<graphpr::IPainter> DocView::painter() const
 {
     return std::make_shared<FrameworkPainter>();
 }
+
+bool DocView::removeItem(const std::size_t index)
+{
+    return m_editor->removeItem(index);
+}
+
 }

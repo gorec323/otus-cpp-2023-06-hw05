@@ -21,10 +21,17 @@ int main()
     auto docView = std::make_shared<hw::DocView>();
     docView->setDocument(doc);
 
+    // добавление графических примитивов
     docView->addLine(1.0, 1.2, 2.0, -1.7);
     docView->addRect(2.0, 2.0, -2.0, -1.7);
 
+    // удаление первого элемента
+    docView->removeItem(0);
+
+    // импорт из файла
     docView->importFromFile("/tmp/image.svg");
+
+    // экспорт в файл
     docView->exportToFile("/tmp/new_image.svg");
 
     return 0;

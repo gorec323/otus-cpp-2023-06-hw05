@@ -36,6 +36,11 @@ public:
     /// @param items 
     void setGraphicsItems(graphpr::GraphicsItems &&items);
 
+    /// @brief удаление элемента
+    /// @param index порядковый номер элемента в документе
+    /// @return true, если элемент удалён, иначе false
+    bool removeItem(const std::size_t index);
+
     /// @brief сбрасывает состояние к начальном, эквивалентно созданию нового документа
     void reset();
 

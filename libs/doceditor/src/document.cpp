@@ -34,6 +34,17 @@ namespace hw {
         m_d->items = std::move(items);
         notityEvent();
     }
+    bool Document::removeItem(const std::size_t index)
+    {
+        if (index < m_d->items.size()) {
+            m_d->items.erase(m_d->items.cbegin() + index);
+            notityEvent();
+            return true;
+        }
+
+        return false;
+    }
+
     void Document::reset()
     {
         m_d->items.clear();
