@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.6)
 
-project(graphprim  LANGUAGES CXX)
+project(graphprim LANGUAGES CXX)
 
 add_library(${PROJECT_NAME}
     include/graphicsitem.hpp
@@ -12,10 +12,6 @@ add_library(${PROJECT_NAME}
     src/graphicsitem.cpp
     src/lineitem.cpp
 )
-
-if (${BUILD_TESTING})
-    add_subdirectory(tests)
-endif()
 
 target_include_directories(${PROJECT_NAME}
 PUBLIC
