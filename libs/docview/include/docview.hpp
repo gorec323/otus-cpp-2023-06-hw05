@@ -5,6 +5,7 @@
 
 namespace hw {
 
+/// @brief Класс для визуальной работы с документом
 class DocView: public patterns::Observer<DocView>
 {
 public:
