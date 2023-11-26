@@ -13,6 +13,7 @@ struct IPainter
     /// @param pos1 
     /// @param pos2 
     virtual void drawLine(const PointD &pos1, const PointD &pos2) = 0;
+    virtual void drawRectangle(const PointD &lt, const PointD &rb) = 0;
 };
 
 }

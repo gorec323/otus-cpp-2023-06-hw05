@@ -5,6 +5,7 @@ project(graphprim  LANGUAGES CXX)
 add_library(${PROJECT_NAME}
     include/graphicsitem.hpp
     include/lineitem.hpp
+    include/rectitem.hpp
     include/point.hpp
     include/rect.hpp
     include/ipainter.hpp

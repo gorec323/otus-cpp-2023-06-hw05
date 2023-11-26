@@ -1,6 +1,7 @@
 #pragma once
 
 #include <memory>
+#include <vector>
 #include "rect.hpp"
 #include "ipainter.hpp"
 
@@ -39,5 +40,8 @@ public:
 private:
     int m_zValue {1}; // глубина расположения элемента
 };
+
+/// @brief вектор shared_ptr графических элементов
+using GraphicsItems = std::vector<std::shared_ptr<GraphicsItem>>;
 
 }
