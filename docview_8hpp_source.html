@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>documents-editor: Исходный файл /home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/docview/include/docview.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">documents-editor
+   &#160;<span id="projectnumber">0.0.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_a2b191db769c27725fa121668905c1fc.html">docview</a></li><li class="navelem"><a class="el" href="dir_c79c74a8ece8ee7ac6d476b038c771fe.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">docview.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="docview_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="observer_8hpp.html">behavioral/observer.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="doceditor_8hpp.html">doceditor.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehw.html">hw</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classhw_1_1DocView.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhw_1_1DocView.html">DocView</a>: <span class="keyword">public</span> <a class="code" href="classpatterns_1_1Observer.html">patterns::Observer</a>&lt;DocView&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classhw_1_1DocView.html#aa379d34973cf33b52e7e69c4b6f17c6c">DocView</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classhw_1_1DocView.html#a1af44e39c69de3a842f6b52877d28b08">   15</a></span>&#160;    <a class="code" href="classhw_1_1DocView.html#a1af44e39c69de3a842f6b52877d28b08">~DocView</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhw_1_1DocView.html#a8eeab2ec6f4b30cf2af3e5455864ae41">creteNew</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhw_1_1DocView.html#a9874d4e7f668d1da6964a48f618cee00">handler</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classhw_1_1DocView.html#a9cd16c40bb3c66cc069d5094faceb0f9">importFromFile</a>(std::filesystem::path &amp;&amp;fileName);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classhw_1_1DocView.html#a38f81ad9cf33f8c2259d187b2401f8ab">exportToFile</a>(<span class="keyword">const</span> std::filesystem::path &amp;fileName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhw_1_1DocView.html#af2569b1353742be67bcf8b7de0e62327">addLine</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> x1, <span class="keyword">const</span> <span class="keywordtype">double</span> y1, <span class="keyword">const</span> <span class="keywordtype">double</span> x2, <span class="keyword">const</span> <span class="keywordtype">double</span> y2);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhw_1_1DocView.html#af736a3ff825c01bc0496d0c1cfc0a86b">addRect</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> tlX, <span class="keyword">const</span> <span class="keywordtype">double</span> tlY, <span class="keyword">const</span> <span class="keywordtype">double</span> brX, <span class="keyword">const</span> <span class="keywordtype">double</span> brY);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhw_1_1DocView.html#a114a990cf8c1b46ba1815c512ae09885">setDocument</a>(std::shared_ptr&lt;Document&gt; doc);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classhw_1_1DocView.html#afefe0834441cba91e87eb14cf8122ec6">removeItem</a>(<span class="keyword">const</span> std::size_t index);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::shared_ptr&lt;graphpr::IPainter&gt; painter() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::unique_ptr&lt;hw::DocEditor&gt; m_editor;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::shared_ptr&lt;Document&gt; m_doc;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="ttc" id="aclasshw_1_1DocView_html"><div class="ttname"><a href="classhw_1_1DocView.html">hw::DocView</a></div><div class="ttdoc">Класс для визуальной работы с документом</div><div class="ttdef"><b>Definition:</b> docview.hpp:10</div></div>
+<div class="ttc" id="aclasshw_1_1DocView_html_a114a990cf8c1b46ba1815c512ae09885"><div class="ttname"><a href="classhw_1_1DocView.html#a114a990cf8c1b46ba1815c512ae09885">hw::DocView::setDocument</a></div><div class="ttdeci">void setDocument(std::shared_ptr&lt; Document &gt; doc)</div><div class="ttdoc">установка документа(модели)</div><div class="ttdef"><b>Definition:</b> docview.cpp:60</div></div>
+<div class="ttc" id="aclasshw_1_1DocView_html_a1af44e39c69de3a842f6b52877d28b08"><div class="ttname"><a href="classhw_1_1DocView.html#a1af44e39c69de3a842f6b52877d28b08">hw::DocView::~DocView</a></div><div class="ttdeci">~DocView() override=default</div><div class="ttdoc">деструктор</div></div>
+<div class="ttc" id="aclasshw_1_1DocView_html_a38f81ad9cf33f8c2259d187b2401f8ab"><div class="ttname"><a href="classhw_1_1DocView.html#a38f81ad9cf33f8c2259d187b2401f8ab">hw::DocView::exportToFile</a></div><div class="ttdeci">bool exportToFile(const std::filesystem::path &amp;fileName) const</div><div class="ttdoc">экспорт документа в файл</div><div class="ttdef"><b>Definition:</b> docview.cpp:45</div></div>
+<div class="ttc" id="aclasshw_1_1DocView_html_a8eeab2ec6f4b30cf2af3e5455864ae41"><div class="ttname"><a href="classhw_1_1DocView.html#a8eeab2ec6f4b30cf2af3e5455864ae41">hw::DocView::creteNew</a></div><div class="ttdeci">void creteNew()</div><div class="ttdoc">создание нового графического документа</div><div class="ttdef"><b>Definition:</b> docview.cpp:28</div></div>
+<div class="ttc" id="aclasshw_1_1DocView_html_a9874d4e7f668d1da6964a48f618cee00"><div class="ttname"><a href="classhw_1_1DocView.html#a9874d4e7f668d1da6964a48f618cee00">hw::DocView::handler</a></div><div class="ttdeci">void handler()</div><div class="ttdoc">обработчик событий документа(модели)</div><div class="ttdef"><b>Definition:</b> docview.cpp:33</div></div>
+<div class="ttc" id="aclasshw_1_1DocView_html_a9cd16c40bb3c66cc069d5094faceb0f9"><div class="ttname"><a href="classhw_1_1DocView.html#a9cd16c40bb3c66cc069d5094faceb0f9">hw::DocView::importFromFile</a></div><div class="ttdeci">bool importFromFile(std::filesystem::path &amp;&amp;fileName)</div><div class="ttdoc">импорт документа из файла</div><div class="ttdef"><b>Definition:</b> docview.cpp:40</div></div>
+<div class="ttc" id="aclasshw_1_1DocView_html_aa379d34973cf33b52e7e69c4b6f17c6c"><div class="ttname"><a href="classhw_1_1DocView.html#aa379d34973cf33b52e7e69c4b6f17c6c">hw::DocView::DocView</a></div><div class="ttdeci">DocView()</div><div class="ttdoc">конструктор</div><div class="ttdef"><b>Definition:</b> docview.cpp:23</div></div>
+<div class="ttc" id="aclasshw_1_1DocView_html_af2569b1353742be67bcf8b7de0e62327"><div class="ttname"><a href="classhw_1_1DocView.html#af2569b1353742be67bcf8b7de0e62327">hw::DocView::addLine</a></div><div class="ttdeci">void addLine(const double x1, const double y1, const double x2, const double y2)</div><div class="ttdoc">добавление линии</div><div class="ttdef"><b>Definition:</b> docview.cpp:50</div></div>
+<div class="ttc" id="aclasshw_1_1DocView_html_af736a3ff825c01bc0496d0c1cfc0a86b"><div class="ttname"><a href="classhw_1_1DocView.html#af736a3ff825c01bc0496d0c1cfc0a86b">hw::DocView::addRect</a></div><div class="ttdeci">void addRect(const double tlX, const double tlY, const double brX, const double brY)</div><div class="ttdoc">добавление прямоугольника</div><div class="ttdef"><b>Definition:</b> docview.cpp:55</div></div>
+<div class="ttc" id="aclasshw_1_1DocView_html_afefe0834441cba91e87eb14cf8122ec6"><div class="ttname"><a href="classhw_1_1DocView.html#afefe0834441cba91e87eb14cf8122ec6">hw::DocView::removeItem</a></div><div class="ttdeci">bool removeItem(const std::size_t index)</div><div class="ttdoc">удаление элемента</div><div class="ttdef"><b>Definition:</b> docview.cpp:76</div></div>
+<div class="ttc" id="aclasspatterns_1_1Observer_html"><div class="ttname"><a href="classpatterns_1_1Observer.html">patterns::Observer</a></div><div class="ttdef"><b>Definition:</b> observer.hpp:20</div></div>
+<div class="ttc" id="adoceditor_8hpp_html"><div class="ttname"><a href="doceditor_8hpp.html">doceditor.hpp</a></div></div>
+<div class="ttc" id="anamespacehw_html"><div class="ttname"><a href="namespacehw.html">hw</a></div><div class="ttdef"><b>Definition:</b> doceditor.hpp:6</div></div>
+<div class="ttc" id="aobserver_8hpp_html"><div class="ttname"><a href="observer_8hpp.html">observer.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>documents-editor: Исходный файл /home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/doceditor/src/svgexporter.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">documents-editor
+   &#160;<span id="projectnumber">0.0.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_52216d7d57283d0e5af7dd0e54c12d94.html">doceditor</a></li><li class="navelem"><a class="el" href="dir_34d94df3b2935521d8e3a393c6b34fd5.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">svgexporter.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="svgexporter_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="idocexporter_8hpp.html">idocexporter.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehw.html">hw</a> {</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classhw_1_1SvgExporter.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhw_1_1SvgExporter.html">SvgExporter</a>: <span class="keyword">public</span> <a class="code" href="structhw_1_1IDocExporter.html">IDocExporter</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classhw_1_1SvgExporter.html#aa877142277e84dc8e6a83fe12af6756c">    9</a></span>&#160;    <a class="code" href="classhw_1_1SvgExporter.html#aa877142277e84dc8e6a83fe12af6756c">~SvgExporter</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classhw_1_1SvgExporter.html#a8612a054317af5d5746c5e3343be55e5">   11</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classhw_1_1SvgExporter.html#a8612a054317af5d5746c5e3343be55e5">exportToFile</a>(std::filesystem::path &amp;&amp;fileName, std::shared_ptr&lt;const Document&gt; doc) <span class="keyword">override</span> <span class="keyword">final</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;SvgExporter::exportToFile &quot;</span> &lt;&lt; fileName &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">namespace </span>fs = std::filesystem;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">if</span> (!doc)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;SvgExporter::exportToFile: document imported&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;    </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="ttc" id="aclasshw_1_1SvgExporter_html"><div class="ttname"><a href="classhw_1_1SvgExporter.html">hw::SvgExporter</a></div><div class="ttdef"><b>Definition:</b> svgexporter.hpp:7</div></div>
+<div class="ttc" id="aclasshw_1_1SvgExporter_html_a8612a054317af5d5746c5e3343be55e5"><div class="ttname"><a href="classhw_1_1SvgExporter.html#a8612a054317af5d5746c5e3343be55e5">hw::SvgExporter::exportToFile</a></div><div class="ttdeci">bool exportToFile(std::filesystem::path &amp;&amp;fileName, std::shared_ptr&lt; const Document &gt; doc) override final</div><div class="ttdoc">чистовиртуальная функция реалзации экспорта в файл</div><div class="ttdef"><b>Definition:</b> svgexporter.hpp:11</div></div>
+<div class="ttc" id="aclasshw_1_1SvgExporter_html_aa877142277e84dc8e6a83fe12af6756c"><div class="ttname"><a href="classhw_1_1SvgExporter.html#aa877142277e84dc8e6a83fe12af6756c">hw::SvgExporter::~SvgExporter</a></div><div class="ttdeci">~SvgExporter() override=default</div></div>
+<div class="ttc" id="aidocexporter_8hpp_html"><div class="ttname"><a href="idocexporter_8hpp.html">idocexporter.hpp</a></div></div>
+<div class="ttc" id="anamespacehw_html"><div class="ttname"><a href="namespacehw.html">hw</a></div><div class="ttdef"><b>Definition:</b> doceditor.hpp:6</div></div>
+<div class="ttc" id="astructhw_1_1IDocExporter_html"><div class="ttname"><a href="structhw_1_1IDocExporter.html">hw::IDocExporter</a></div><div class="ttdoc">абстрактный интерфейс реализации импорта документа</div><div class="ttdef"><b>Definition:</b> idocexporter.hpp:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

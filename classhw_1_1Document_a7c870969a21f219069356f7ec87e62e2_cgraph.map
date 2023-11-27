@@ -1,0 +1,4 @@
+<map id="hw::Document::reset" name="hw::Document::reset">
+<area shape="rect" id="node1" title="сбрасывает состояние к начальном, эквивалентно созданию нового документа" alt="" coords="5,13,161,39"/>
+<area shape="rect" id="node2" href="$classpatterns_1_1Observable.html#a7306a664d8d59917b5f787b1616eac60" title=" " alt="" coords="209,5,368,47"/>
+</map>

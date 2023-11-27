@@ -1,0 +1,4 @@
+<map id="graphpr::LineItem" name="graphpr::LineItem">
+<area shape="rect" id="node1" title="Элемент, отвечающий за отображение линии" alt="" coords="20,80,157,107"/>
+<area shape="rect" id="node2" href="$classgraphpr_1_1GraphicsItem.html" title="Базовый графический элемент" alt="" coords="5,5,172,32"/>
+</map>

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>documents-editor: Исходный файл /home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/graphpr/include/lineitem.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">documents-editor
+   &#160;<span id="projectnumber">0.0.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_ee585eb0f900bd95f8dde1b4453c8479.html">graphpr</a></li><li class="navelem"><a class="el" href="dir_dfdcc534cf0df19567af593099f46a9f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">lineitem.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lineitem_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="graphicsitem_8hpp.html">graphicsitem.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="point_8hpp.html">point.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegraphpr.html">graphpr</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classgraphpr_1_1LineItem.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgraphpr_1_1LineItem.html">LineItem</a>: <span class="keyword">public</span> <a class="code" href="classgraphpr_1_1GraphicsItem.html">GraphicsItem</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classgraphpr_1_1LineItem.html#abb2398b3dd572e708890cf785ccf5224">   12</a></span>&#160;    <a class="code" href="classgraphpr_1_1LineItem.html#abb2398b3dd572e708890cf785ccf5224">LineItem</a>(<span class="keyword">const</span> <a class="code" href="structgraphpr_1_1Point.html">PointD</a> &amp;pos1, <span class="keyword">const</span> <a class="code" href="structgraphpr_1_1Point.html">PointD</a> &amp;pos2): m_pos1 {pos1}, m_pos2 {pos2} {}</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classgraphpr_1_1LineItem.html#a5697b29ad42ef25dd71222e49857bf67">   13</a></span>&#160;    <a class="code" href="classgraphpr_1_1LineItem.html#a5697b29ad42ef25dd71222e49857bf67">~LineItem</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgraphpr_1_1LineItem.html#a5508ba3315c345b8a15f45f00ae2e701">paint</a>(std::shared_ptr&lt;IPainter&gt; painter) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classgraphpr_1_1Rect.html">RectD</a> <a class="code" href="classgraphpr_1_1LineItem.html#a61e3939a46e3fc9c4c5e73aa7120746d">boundingRect</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="structgraphpr_1_1Point.html">PointD</a> m_pos1;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="structgraphpr_1_1Point.html">PointD</a> m_pos2;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="ttc" id="aclassgraphpr_1_1GraphicsItem_html"><div class="ttname"><a href="classgraphpr_1_1GraphicsItem.html">graphpr::GraphicsItem</a></div><div class="ttdoc">Базовый графический элемент</div><div class="ttdef"><b>Definition:</b> graphicsitem.hpp:12</div></div>
+<div class="ttc" id="aclassgraphpr_1_1LineItem_html"><div class="ttname"><a href="classgraphpr_1_1LineItem.html">graphpr::LineItem</a></div><div class="ttdoc">Элемент, отвечающий за отображение линии</div><div class="ttdef"><b>Definition:</b> lineitem.hpp:10</div></div>
+<div class="ttc" id="aclassgraphpr_1_1LineItem_html_a5508ba3315c345b8a15f45f00ae2e701"><div class="ttname"><a href="classgraphpr_1_1LineItem.html#a5508ba3315c345b8a15f45f00ae2e701">graphpr::LineItem::paint</a></div><div class="ttdeci">void paint(std::shared_ptr&lt; IPainter &gt; painter) override</div><div class="ttdoc">рисует графический элемент, используя painter.</div><div class="ttdef"><b>Definition:</b> lineitem.cpp:6</div></div>
+<div class="ttc" id="aclassgraphpr_1_1LineItem_html_a5697b29ad42ef25dd71222e49857bf67"><div class="ttname"><a href="classgraphpr_1_1LineItem.html#a5697b29ad42ef25dd71222e49857bf67">graphpr::LineItem::~LineItem</a></div><div class="ttdeci">~LineItem() override=default</div></div>
+<div class="ttc" id="aclassgraphpr_1_1LineItem_html_a61e3939a46e3fc9c4c5e73aa7120746d"><div class="ttname"><a href="classgraphpr_1_1LineItem.html#a61e3939a46e3fc9c4c5e73aa7120746d">graphpr::LineItem::boundingRect</a></div><div class="ttdeci">RectD boundingRect() const override</div><div class="ttdoc">внешние границы элемента</div><div class="ttdef"><b>Definition:</b> lineitem.cpp:14</div></div>
+<div class="ttc" id="aclassgraphpr_1_1LineItem_html_abb2398b3dd572e708890cf785ccf5224"><div class="ttname"><a href="classgraphpr_1_1LineItem.html#abb2398b3dd572e708890cf785ccf5224">graphpr::LineItem::LineItem</a></div><div class="ttdeci">LineItem(const PointD &amp;pos1, const PointD &amp;pos2)</div><div class="ttdef"><b>Definition:</b> lineitem.hpp:12</div></div>
+<div class="ttc" id="aclassgraphpr_1_1Rect_html"><div class="ttname"><a href="classgraphpr_1_1Rect.html">graphpr::Rect</a></div><div class="ttdoc">Описание координат прямоугольника</div><div class="ttdef"><b>Definition:</b> rect.hpp:11</div></div>
+<div class="ttc" id="agraphicsitem_8hpp_html"><div class="ttname"><a href="graphicsitem_8hpp.html">graphicsitem.hpp</a></div></div>
+<div class="ttc" id="anamespacegraphpr_html"><div class="ttname"><a href="namespacegraphpr.html">graphpr</a></div><div class="ttdef"><b>Definition:</b> graphicsitem.hpp:8</div></div>
+<div class="ttc" id="apoint_8hpp_html"><div class="ttname"><a href="point_8hpp.html">point.hpp</a></div></div>
+<div class="ttc" id="astructgraphpr_1_1Point_html"><div class="ttname"><a href="structgraphpr_1_1Point.html">graphpr::Point&lt; double &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

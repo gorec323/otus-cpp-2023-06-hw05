@@ -1,0 +1,7 @@
+<map id="patterns::IObserver" name="patterns::IObserver">
+<area shape="rect" id="node1" title="Интерфейс класса наблюдателя" alt="" coords="86,95,233,121"/>
+<area shape="rect" id="node3" href="$classpatterns_1_1Observer.html" title=" " alt="" coords="5,169,148,211"/>
+<area shape="rect" id="node5" href="$classpatterns_1_1Observer.html" title=" " alt="" coords="172,169,315,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="67,5,251,47"/>
+<area shape="rect" id="node4" href="$classhw_1_1DocView.html" title="Класс для визуальной работы с документом" alt="" coords="24,259,129,285"/>
+</map>

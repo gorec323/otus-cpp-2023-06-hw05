@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>documents-editor: Класс graphpr::GraphicsItem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">documents-editor
+   &#160;<span id="projectnumber">0.0.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacegraphpr.html">graphpr</a></li><li class="navelem"><a class="el" href="classgraphpr_1_1GraphicsItem.html">GraphicsItem</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classgraphpr_1_1GraphicsItem-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс graphpr::GraphicsItem<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Базовый графический элемент  
+ <a href="classgraphpr_1_1GraphicsItem.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="graphicsitem_8hpp_source.html">graphicsitem.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:graphpr::GraphicsItem:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgraphpr_1_1GraphicsItem__inherit__graph.png" border="0" usemap="#agraphpr_1_1GraphicsItem_inherit__map" alt="Inheritance graph"/></div>
+<map name="agraphpr_1_1GraphicsItem_inherit__map" id="agraphpr_1_1GraphicsItem_inherit__map">
+<area shape="rect" title="Базовый графический элемент" alt="" coords="72,5,239,32"/>
+<area shape="rect" href="classgraphpr_1_1LineItem.html" title="Элемент, отвечающий за отображение линии" alt="" coords="5,80,143,107"/>
+<area shape="rect" href="classgraphpr_1_1RectItem.html" title="Элемент, отвечающий за отображение линии" alt="" coords="167,80,306,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a530f68557e5fe7adb8b49744922ecb12"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphpr_1_1GraphicsItem.html#a530f68557e5fe7adb8b49744922ecb12">~GraphicsItem</a> ()=default</td></tr>
+<tr class="separator:a530f68557e5fe7adb8b49744922ecb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbe809ffb1191a97482e8f4dfa89b25"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphpr_1_1GraphicsItem.html#a2dbe809ffb1191a97482e8f4dfa89b25">paint</a> (std::shared_ptr&lt; <a class="el" href="structgraphpr_1_1IPainter.html">IPainter</a> &gt; painter)=0</td></tr>
+<tr class="memdesc:a2dbe809ffb1191a97482e8f4dfa89b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">рисует графический элемент, используя painter.  <a href="classgraphpr_1_1GraphicsItem.html#a2dbe809ffb1191a97482e8f4dfa89b25">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2dbe809ffb1191a97482e8f4dfa89b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9c5b7b6b8a1db9a7b0a5698339a918"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacegraphpr.html#ad56427aab9b22514dca01f24fcd473e7">RectD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphpr_1_1GraphicsItem.html#a6a9c5b7b6b8a1db9a7b0a5698339a918">boundingRect</a> () const =0</td></tr>
+<tr class="memdesc:a6a9c5b7b6b8a1db9a7b0a5698339a918"><td class="mdescLeft">&#160;</td><td class="mdescRight">внешние границы элемента  <a href="classgraphpr_1_1GraphicsItem.html#a6a9c5b7b6b8a1db9a7b0a5698339a918">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6a9c5b7b6b8a1db9a7b0a5698339a918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca08931c11e71ff079025339545550a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphpr_1_1GraphicsItem.html#abca08931c11e71ff079025339545550a">zValue</a> () const noexcept</td></tr>
+<tr class="memdesc:abca08931c11e71ff079025339545550a"><td class="mdescLeft">&#160;</td><td class="mdescRight">z-уровень расположения элемента  <a href="classgraphpr_1_1GraphicsItem.html#abca08931c11e71ff079025339545550a">Подробнее...</a><br /></td></tr>
+<tr class="separator:abca08931c11e71ff079025339545550a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f9a849ef9608e284ab3fcfc0fe5104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphpr_1_1GraphicsItem.html#a13f9a849ef9608e284ab3fcfc0fe5104">setZValue</a> (const int value) noexcept</td></tr>
+<tr class="memdesc:a13f9a849ef9608e284ab3fcfc0fe5104"><td class="mdescLeft">&#160;</td><td class="mdescRight">установка z-уровня расположения элемента  <a href="classgraphpr_1_1GraphicsItem.html#a13f9a849ef9608e284ab3fcfc0fe5104">Подробнее...</a><br /></td></tr>
+<tr class="separator:a13f9a849ef9608e284ab3fcfc0fe5104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Базовый графический элемент </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a530f68557e5fe7adb8b49744922ecb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a530f68557e5fe7adb8b49744922ecb12">&#9670;&nbsp;</a></span>~GraphicsItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual graphpr::GraphicsItem::~GraphicsItem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a6a9c5b7b6b8a1db9a7b0a5698339a918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9c5b7b6b8a1db9a7b0a5698339a918">&#9670;&nbsp;</a></span>boundingRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacegraphpr.html#ad56427aab9b22514dca01f24fcd473e7">RectD</a> graphpr::GraphicsItem::boundingRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>внешние границы элемента </p>
+<dl class="section return"><dt>Возвращает</dt><dd>RectD </dd></dl>
+
+<p>Замещается в <a class="el" href="classgraphpr_1_1RectItem.html#af0edefa09e24274b3fae82ce22806718">graphpr::RectItem</a> и <a class="el" href="classgraphpr_1_1LineItem.html#a61e3939a46e3fc9c4c5e73aa7120746d">graphpr::LineItem</a>.</p>
+
+</div>
+</div>
+<a id="a2dbe809ffb1191a97482e8f4dfa89b25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dbe809ffb1191a97482e8f4dfa89b25">&#9670;&nbsp;</a></span>paint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void graphpr::GraphicsItem::paint </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="structgraphpr_1_1IPainter.html">IPainter</a> &gt;&#160;</td>
+          <td class="paramname"><em>painter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>рисует графический элемент, используя painter. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">painter</td><td>указатель на контекст рисования </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="classgraphpr_1_1RectItem.html#a3f96fbe2714af9b6fdbef1637b8de870">graphpr::RectItem</a> и <a class="el" href="classgraphpr_1_1LineItem.html#a5508ba3315c345b8a15f45f00ae2e701">graphpr::LineItem</a>.</p>
+
+</div>
+</div>
+<a id="a13f9a849ef9608e284ab3fcfc0fe5104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f9a849ef9608e284ab3fcfc0fe5104">&#9670;&nbsp;</a></span>setZValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphpr::GraphicsItem::setZValue </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>установка z-уровня расположения элемента </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td><br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abca08931c11e71ff079025339545550a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca08931c11e71ff079025339545550a">&#9670;&nbsp;</a></span>zValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int graphpr::GraphicsItem::zValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>z-уровень расположения элемента </p>
+<dl class="section return"><dt>Возвращает</dt><dd><br  />
+ </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>/home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/graphpr/include/<a class="el" href="graphicsitem_8hpp_source.html">graphicsitem.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

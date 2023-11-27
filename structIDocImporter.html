@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>documents-editor: Структура IDocImporter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">documents-editor
+   &#160;<span id="projectnumber">0.0.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="structIDocImporter-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура IDocImporter<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>абстрактный интерфейс реализации импорта документа  
+ <a href="structIDocImporter.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="idocimporter_8hpp_source.html">idocimporter.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:IDocImporter:</div>
+<div class="dyncontent">
+<div class="center"><img src="structIDocImporter__inherit__graph.png" border="0" usemap="#aIDocImporter_inherit__map" alt="Inheritance graph"/></div>
+<map name="aIDocImporter_inherit__map" id="aIDocImporter_inherit__map">
+<area shape="rect" title="абстрактный интерфейс реализации импорта документа" alt="" coords="16,5,123,32"/>
+<area shape="rect" href="structhw_1_1SvgImporter.html" title="класс импорта документа" alt="" coords="5,80,133,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a10d6acaaee1a0f6acb0e3dd4eca53d55"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIDocImporter.html#a10d6acaaee1a0f6acb0e3dd4eca53d55">~IDocImporter</a> ()=default</td></tr>
+<tr class="memdesc:a10d6acaaee1a0f6acb0e3dd4eca53d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">виртуальный деструктор  <a href="structIDocImporter.html#a10d6acaaee1a0f6acb0e3dd4eca53d55">Подробнее...</a><br /></td></tr>
+<tr class="separator:a10d6acaaee1a0f6acb0e3dd4eca53d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a62b96f82eebc21188f3e557a2f669"><td class="memItemLeft" align="right" valign="top">virtual std::tuple&lt; bool, <a class="el" href="namespacegraphpr.html#a78b09cbd5c2ddbfd12ae3ebb18b605f0">graphpr::GraphicsItems</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIDocImporter.html#af5a62b96f82eebc21188f3e557a2f669">importDoc</a> (std::filesystem::path &amp;&amp;)=0</td></tr>
+<tr class="memdesc:af5a62b96f82eebc21188f3e557a2f669"><td class="mdescLeft">&#160;</td><td class="mdescRight">чистовиртуальная функция реалзации импорта из файла  <a href="structIDocImporter.html#af5a62b96f82eebc21188f3e557a2f669">Подробнее...</a><br /></td></tr>
+<tr class="separator:af5a62b96f82eebc21188f3e557a2f669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>абстрактный интерфейс реализации импорта документа </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a10d6acaaee1a0f6acb0e3dd4eca53d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d6acaaee1a0f6acb0e3dd4eca53d55">&#9670;&nbsp;</a></span>~IDocImporter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IDocImporter::~IDocImporter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>виртуальный деструктор </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="af5a62b96f82eebc21188f3e557a2f669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a62b96f82eebc21188f3e557a2f669">&#9670;&nbsp;</a></span>importDoc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::tuple&lt;bool, <a class="el" href="namespacegraphpr.html#a78b09cbd5c2ddbfd12ae3ebb18b605f0">graphpr::GraphicsItems</a>&gt; IDocImporter::importDoc </td>
+          <td>(</td>
+          <td class="paramtype">std::filesystem::path &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>чистовиртуальная функция реалзации импорта из файла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">путь</td><td>к файлу </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>tuple с первым параметром true, если удалось импортировать из файла, в противном случае false и сами графические элементы </dd></dl>
+
+<p>Замещается в <a class="el" href="structhw_1_1SvgImporter.html#a99b22b49fbd02e3b0bd1da9f4cd68a28">hw::SvgImporter</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>/home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/doceditor/src/<a class="el" href="idocimporter_8hpp_source.html">idocimporter.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

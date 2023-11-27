@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>documents-editor: Исходный файл /home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/patterns/include/behavioral/observable.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">documents-editor
+   &#160;<span id="projectnumber">0.0.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_44c23be7462595e1034483a6413ef7be.html">patterns</a></li><li class="navelem"><a class="el" href="dir_10565db2d52db669e1892e193472fc5b.html">include</a></li><li class="navelem"><a class="el" href="dir_1463c0964c83f70895618f022df962f6.html">behavioral</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">observable.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="observable_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="observer_8hpp.html">observer.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespacepatterns.html">    6</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepatterns.html">patterns</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classpatterns_1_1Observable.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpatterns_1_1Observable.html">Observable</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classpatterns_1_1Observable.html#a4e54fa27f7ba62758df7e0c6871e4039">   11</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classpatterns_1_1Observable.html#a4e54fa27f7ba62758df7e0c6871e4039">addObserver</a>(std::weak_ptr&lt;IObserver&gt; &amp;&amp;obs)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        m_observers.push_back(std::forward&lt;decltype(obs)&gt;(obs));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ... Args&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classpatterns_1_1Observable.html#a7306a664d8d59917b5f787b1616eac60">   18</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classpatterns_1_1Observable.html#a7306a664d8d59917b5f787b1616eac60">notityEvent</a>(Args ...args)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;&amp;observer : m_observers)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keyword">auto</span> sho = observer.lock();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">if</span> (sho)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                sho-&gt;notifyHandler(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::list&lt;std::weak_ptr&lt;IObserver&gt;&gt; m_observers;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="ttc" id="aclasspatterns_1_1Observable_html"><div class="ttname"><a href="classpatterns_1_1Observable.html">patterns::Observable</a></div><div class="ttdef"><b>Definition:</b> observable.hpp:9</div></div>
+<div class="ttc" id="aclasspatterns_1_1Observable_html_a4e54fa27f7ba62758df7e0c6871e4039"><div class="ttname"><a href="classpatterns_1_1Observable.html#a4e54fa27f7ba62758df7e0c6871e4039">patterns::Observable::addObserver</a></div><div class="ttdeci">void addObserver(std::weak_ptr&lt; IObserver &gt; &amp;&amp;obs)</div><div class="ttdef"><b>Definition:</b> observable.hpp:11</div></div>
+<div class="ttc" id="aclasspatterns_1_1Observable_html_a7306a664d8d59917b5f787b1616eac60"><div class="ttname"><a href="classpatterns_1_1Observable.html#a7306a664d8d59917b5f787b1616eac60">patterns::Observable::notityEvent</a></div><div class="ttdeci">void notityEvent(Args ...args)</div><div class="ttdef"><b>Definition:</b> observable.hpp:18</div></div>
+<div class="ttc" id="anamespacepatterns_html"><div class="ttname"><a href="namespacepatterns.html">patterns</a></div><div class="ttdef"><b>Definition:</b> observable.hpp:6</div></div>
+<div class="ttc" id="aobserver_8hpp_html"><div class="ttname"><a href="observer_8hpp.html">observer.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

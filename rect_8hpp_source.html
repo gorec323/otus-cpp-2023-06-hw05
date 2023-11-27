@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>documents-editor: Исходный файл /home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/graphpr/include/rect.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">documents-editor
+   &#160;<span id="projectnumber">0.0.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_ee585eb0f900bd95f8dde1b4453c8479.html">graphpr</a></li><li class="navelem"><a class="el" href="dir_dfdcc534cf0df19567af593099f46a9f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">rect.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="rect_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="point_8hpp.html">point.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegraphpr.html">graphpr</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classgraphpr_1_1Rect.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgraphpr_1_1Rect.html">Rect</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classgraphpr_1_1Rect.html#a95d42b7a911d2b39179a6b130155ae1f">   13</a></span>&#160;    <a class="code" href="classgraphpr_1_1Rect.html#a95d42b7a911d2b39179a6b130155ae1f">Rect</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classgraphpr_1_1Rect.html#a95d42b7a911d2b39179a6b130155ae1f">Rect</a>(<span class="keyword">const</span> <a class="code" href="structgraphpr_1_1Point.html">Point&lt;T&gt;</a> &amp;topLeft, <span class="keyword">const</span> <a class="code" href="structgraphpr_1_1Point.html">Point&lt;T&gt;</a> &amp;bottomRight);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classgraphpr_1_1Rect.html#a95d42b7a911d2b39179a6b130155ae1f">Rect</a>(<span class="keyword">const</span> T tlX, <span class="keyword">const</span> T tlY, <span class="keyword">const</span> T brX, <span class="keyword">const</span> T brY);</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classgraphpr_1_1Rect.html#a048240602a0827223d5c9e5621e954b0">   16</a></span>&#160;    <a class="code" href="classgraphpr_1_1Rect.html#a048240602a0827223d5c9e5621e954b0">~Rect</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="structgraphpr_1_1Point.html">Point&lt;T&gt;</a> m_topLeft;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="structgraphpr_1_1Point.html">Point&lt;T&gt;</a> m_bottomRight;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacegraphpr.html#ad56427aab9b22514dca01f24fcd473e7">   23</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classgraphpr_1_1Rect.html">RectD</a> = <a class="code" href="classgraphpr_1_1Rect.html">Rect&lt;double&gt;</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespacegraphpr.html#a8f7f78d709034c450f4deb4fbddf6558">   26</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classgraphpr_1_1Rect.html">RectInt</a> = <a class="code" href="classgraphpr_1_1Rect.html">Rect&lt;int&gt;</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classgraphpr_1_1Rect.html#a0088c4931c2b68ac82e74f1fc0e4e683">   29</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classgraphpr_1_1Rect.html#a95d42b7a911d2b39179a6b130155ae1f">Rect&lt;T&gt;::Rect</a>(<span class="keyword">const</span> <a class="code" href="structgraphpr_1_1Point.html">Point&lt;T&gt;</a> &amp;topLeft, <span class="keyword">const</span> <a class="code" href="structgraphpr_1_1Point.html">Point&lt;T&gt;</a> &amp;bottomRight):</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    m_topLeft {topLeft}, m_bottomRight {bottomRight}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classgraphpr_1_1Rect.html#a4633de0a5615b7348df6285697bacd1a">   35</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classgraphpr_1_1Rect.html#a95d42b7a911d2b39179a6b130155ae1f">Rect&lt;T&gt;::Rect</a>(<span class="keyword">const</span> T tlX, <span class="keyword">const</span> T tlY, <span class="keyword">const</span> T brX, <span class="keyword">const</span> T brY):</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classgraphpr_1_1Rect.html">Rect</a>(<a class="code" href="structgraphpr_1_1Point.html">Point</a>&lt;T&gt;{tlX, tlY}, <a class="code" href="structgraphpr_1_1Point.html">Point&lt;T&gt;</a>{brX, brY})</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="ttc" id="aclassgraphpr_1_1Rect_html"><div class="ttname"><a href="classgraphpr_1_1Rect.html">graphpr::Rect</a></div><div class="ttdoc">Описание координат прямоугольника</div><div class="ttdef"><b>Definition:</b> rect.hpp:11</div></div>
+<div class="ttc" id="aclassgraphpr_1_1Rect_html_a048240602a0827223d5c9e5621e954b0"><div class="ttname"><a href="classgraphpr_1_1Rect.html#a048240602a0827223d5c9e5621e954b0">graphpr::Rect::~Rect</a></div><div class="ttdeci">~Rect()=default</div></div>
+<div class="ttc" id="aclassgraphpr_1_1Rect_html_a95d42b7a911d2b39179a6b130155ae1f"><div class="ttname"><a href="classgraphpr_1_1Rect.html#a95d42b7a911d2b39179a6b130155ae1f">graphpr::Rect::Rect</a></div><div class="ttdeci">Rect()=default</div></div>
+<div class="ttc" id="anamespacegraphpr_html"><div class="ttname"><a href="namespacegraphpr.html">graphpr</a></div><div class="ttdef"><b>Definition:</b> graphicsitem.hpp:8</div></div>
+<div class="ttc" id="apoint_8hpp_html"><div class="ttname"><a href="point_8hpp.html">point.hpp</a></div></div>
+<div class="ttc" id="astructgraphpr_1_1Point_html"><div class="ttname"><a href="structgraphpr_1_1Point.html">graphpr::Point</a></div><div class="ttdef"><b>Definition:</b> point.hpp:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

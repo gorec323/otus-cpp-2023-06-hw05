@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>documents-editor: Структура hw::IDocExporter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">documents-editor
+   &#160;<span id="projectnumber">0.0.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacehw.html">hw</a></li><li class="navelem"><a class="el" href="structhw_1_1IDocExporter.html">IDocExporter</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="structhw_1_1IDocExporter-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура hw::IDocExporter<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>абстрактный интерфейс реализации импорта документа  
+ <a href="structhw_1_1IDocExporter.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="idocexporter_8hpp_source.html">idocexporter.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:hw::IDocExporter:</div>
+<div class="dyncontent">
+<div class="center"><img src="structhw_1_1IDocExporter__inherit__graph.png" border="0" usemap="#ahw_1_1IDocExporter_inherit__map" alt="Inheritance graph"/></div>
+<map name="ahw_1_1IDocExporter_inherit__map" id="ahw_1_1IDocExporter_inherit__map">
+<area shape="rect" title="абстрактный интерфейс реализации импорта документа" alt="" coords="5,5,137,32"/>
+<area shape="rect" href="classhw_1_1SvgExporter.html" title=" " alt="" coords="8,80,135,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a97fd1fee74066555cfdd505a239c0a89"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhw_1_1IDocExporter.html#a97fd1fee74066555cfdd505a239c0a89">~IDocExporter</a> ()=default</td></tr>
+<tr class="memdesc:a97fd1fee74066555cfdd505a239c0a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">виртуальный деструктор  <a href="structhw_1_1IDocExporter.html#a97fd1fee74066555cfdd505a239c0a89">Подробнее...</a><br /></td></tr>
+<tr class="separator:a97fd1fee74066555cfdd505a239c0a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2768a915e29d8c5c3bd736ba5e1d30"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhw_1_1IDocExporter.html#a9d2768a915e29d8c5c3bd736ba5e1d30">exportToFile</a> (std::filesystem::path &amp;&amp;, std::shared_ptr&lt; const <a class="el" href="classhw_1_1Document.html">Document</a> &gt;)=0</td></tr>
+<tr class="memdesc:a9d2768a915e29d8c5c3bd736ba5e1d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">чистовиртуальная функция реалзации экспорта в файл  <a href="structhw_1_1IDocExporter.html#a9d2768a915e29d8c5c3bd736ba5e1d30">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9d2768a915e29d8c5c3bd736ba5e1d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>абстрактный интерфейс реализации импорта документа </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a97fd1fee74066555cfdd505a239c0a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97fd1fee74066555cfdd505a239c0a89">&#9670;&nbsp;</a></span>~IDocExporter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual hw::IDocExporter::~IDocExporter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>виртуальный деструктор </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a9d2768a915e29d8c5c3bd736ba5e1d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d2768a915e29d8c5c3bd736ba5e1d30">&#9670;&nbsp;</a></span>exportToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool hw::IDocExporter::exportToFile </td>
+          <td>(</td>
+          <td class="paramtype">std::filesystem::path &amp;&amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="classhw_1_1Document.html">Document</a> &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>чистовиртуальная функция реалзации экспорта в файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">путь</td><td>к файлу </td></tr>
+    <tr><td class="paramname">умный</td><td>указатель на константный объект документа </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если экспорт произошёл успешно, false - в противном случае </dd></dl>
+
+<p>Замещается в <a class="el" href="classhw_1_1SvgExporter.html#a8612a054317af5d5746c5e3343be55e5">hw::SvgExporter</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>/home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/doceditor/src/<a class="el" href="idocexporter_8hpp_source.html">idocexporter.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

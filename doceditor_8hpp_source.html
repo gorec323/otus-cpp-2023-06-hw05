@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>documents-editor: Исходный файл /home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/doceditor/include/doceditor.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">documents-editor
+   &#160;<span id="projectnumber">0.0.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_52216d7d57283d0e5af7dd0e54c12d94.html">doceditor</a></li><li class="navelem"><a class="el" href="dir_66a3fff7696d4543b8744ffc7fa1dd48.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">doceditor.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="doceditor_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="document_8hpp.html">document.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespacehw.html">    6</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehw.html">hw</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classhw_1_1DocEditor.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhw_1_1DocEditor.html">DocEditor</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::shared_ptr&lt;Document&gt; <a class="code" href="classhw_1_1DocEditor.html#aacde10382984e7e7ec11142cb639dc8e">newDocument</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classhw_1_1DocEditor.html#aaef042a3fd1b4b3984a682fbaf22e2e2">importFromFile</a>(std::filesystem::path &amp;&amp;fileName);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classhw_1_1DocEditor.html#ae566f3ea306ab83755ec16965ab2979e">exportToFile</a>(std::filesystem::path &amp;&amp;fileName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhw_1_1DocEditor.html#a9dcf3919c9f9da37c2d269b279884f4f">addLine</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> x1, <span class="keyword">const</span> <span class="keywordtype">double</span> y1, <span class="keyword">const</span> <span class="keywordtype">double</span> x2, <span class="keyword">const</span> <span class="keywordtype">double</span> y2);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhw_1_1DocEditor.html#acccd4bab5f58cb27c056fa62838a1fc9">addRect</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> tlX, <span class="keyword">const</span> <span class="keywordtype">double</span> tlY, <span class="keyword">const</span> <span class="keywordtype">double</span> brX, <span class="keyword">const</span> <span class="keywordtype">double</span> brY);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhw_1_1DocEditor.html#acbabe489cc4b42693bdc47b1646faf61">setDocument</a>(std::shared_ptr&lt;Document&gt; doc);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classhw_1_1DocEditor.html#a3996c3e37661cb906d9cbfe6cb6ceb12">removeItem</a>(<span class="keyword">const</span> std::size_t index);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::shared_ptr&lt;Document&gt; m_document;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="ttc" id="aclasshw_1_1DocEditor_html"><div class="ttname"><a href="classhw_1_1DocEditor.html">hw::DocEditor</a></div><div class="ttdoc">класс -контроллер для управления документом(моделью)</div><div class="ttdef"><b>Definition:</b> doceditor.hpp:10</div></div>
+<div class="ttc" id="aclasshw_1_1DocEditor_html_a3996c3e37661cb906d9cbfe6cb6ceb12"><div class="ttname"><a href="classhw_1_1DocEditor.html#a3996c3e37661cb906d9cbfe6cb6ceb12">hw::DocEditor::removeItem</a></div><div class="ttdeci">bool removeItem(const std::size_t index)</div><div class="ttdoc">удаление элемента</div><div class="ttdef"><b>Definition:</b> doceditor.cpp:66</div></div>
+<div class="ttc" id="aclasshw_1_1DocEditor_html_a9dcf3919c9f9da37c2d269b279884f4f"><div class="ttname"><a href="classhw_1_1DocEditor.html#a9dcf3919c9f9da37c2d269b279884f4f">hw::DocEditor::addLine</a></div><div class="ttdeci">void addLine(const double x1, const double y1, const double x2, const double y2)</div><div class="ttdoc">добавление линии</div><div class="ttdef"><b>Definition:</b> doceditor.cpp:45</div></div>
+<div class="ttc" id="aclasshw_1_1DocEditor_html_aacde10382984e7e7ec11142cb639dc8e"><div class="ttname"><a href="classhw_1_1DocEditor.html#aacde10382984e7e7ec11142cb639dc8e">hw::DocEditor::newDocument</a></div><div class="ttdeci">std::shared_ptr&lt; Document &gt; newDocument()</div><div class="ttdoc">Создание нового документа</div><div class="ttdef"><b>Definition:</b> doceditor.cpp:9</div></div>
+<div class="ttc" id="aclasshw_1_1DocEditor_html_aaef042a3fd1b4b3984a682fbaf22e2e2"><div class="ttname"><a href="classhw_1_1DocEditor.html#aaef042a3fd1b4b3984a682fbaf22e2e2">hw::DocEditor::importFromFile</a></div><div class="ttdeci">bool importFromFile(std::filesystem::path &amp;&amp;fileName)</div><div class="ttdef"><b>Definition:</b> doceditor.cpp:17</div></div>
+<div class="ttc" id="aclasshw_1_1DocEditor_html_acbabe489cc4b42693bdc47b1646faf61"><div class="ttname"><a href="classhw_1_1DocEditor.html#acbabe489cc4b42693bdc47b1646faf61">hw::DocEditor::setDocument</a></div><div class="ttdeci">void setDocument(std::shared_ptr&lt; Document &gt; doc)</div><div class="ttdef"><b>Definition:</b> doceditor.cpp:62</div></div>
+<div class="ttc" id="aclasshw_1_1DocEditor_html_acccd4bab5f58cb27c056fa62838a1fc9"><div class="ttname"><a href="classhw_1_1DocEditor.html#acccd4bab5f58cb27c056fa62838a1fc9">hw::DocEditor::addRect</a></div><div class="ttdeci">void addRect(const double tlX, const double tlY, const double brX, const double brY)</div><div class="ttdoc">добавление прямоугольника</div><div class="ttdef"><b>Definition:</b> doceditor.cpp:54</div></div>
+<div class="ttc" id="aclasshw_1_1DocEditor_html_ae566f3ea306ab83755ec16965ab2979e"><div class="ttname"><a href="classhw_1_1DocEditor.html#ae566f3ea306ab83755ec16965ab2979e">hw::DocEditor::exportToFile</a></div><div class="ttdeci">bool exportToFile(std::filesystem::path &amp;&amp;fileName) const</div><div class="ttdoc">экспорт документа в файл</div><div class="ttdef"><b>Definition:</b> doceditor.cpp:37</div></div>
+<div class="ttc" id="adocument_8hpp_html"><div class="ttname"><a href="document_8hpp.html">document.hpp</a></div></div>
+<div class="ttc" id="anamespacehw_html"><div class="ttname"><a href="namespacehw.html">hw</a></div><div class="ttdef"><b>Definition:</b> doceditor.hpp:6</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

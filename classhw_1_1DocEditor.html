@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>documents-editor: Класс hw::DocEditor</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">documents-editor
+   &#160;<span id="projectnumber">0.0.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacehw.html">hw</a></li><li class="navelem"><a class="el" href="classhw_1_1DocEditor.html">DocEditor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classhw_1_1DocEditor-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс hw::DocEditor</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>класс -контроллер для управления документом(моделью)  
+ <a href="classhw_1_1DocEditor.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="doceditor_8hpp_source.html">doceditor.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aacde10382984e7e7ec11142cb639dc8e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classhw_1_1Document.html">Document</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhw_1_1DocEditor.html#aacde10382984e7e7ec11142cb639dc8e">newDocument</a> ()</td></tr>
+<tr class="memdesc:aacde10382984e7e7ec11142cb639dc8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание нового документа  <a href="classhw_1_1DocEditor.html#aacde10382984e7e7ec11142cb639dc8e">Подробнее...</a><br /></td></tr>
+<tr class="separator:aacde10382984e7e7ec11142cb639dc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef042a3fd1b4b3984a682fbaf22e2e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhw_1_1DocEditor.html#aaef042a3fd1b4b3984a682fbaf22e2e2">importFromFile</a> (std::filesystem::path &amp;&amp;fileName)</td></tr>
+<tr class="separator:aaef042a3fd1b4b3984a682fbaf22e2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae566f3ea306ab83755ec16965ab2979e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhw_1_1DocEditor.html#ae566f3ea306ab83755ec16965ab2979e">exportToFile</a> (std::filesystem::path &amp;&amp;fileName) const</td></tr>
+<tr class="memdesc:ae566f3ea306ab83755ec16965ab2979e"><td class="mdescLeft">&#160;</td><td class="mdescRight">экспорт документа в файл  <a href="classhw_1_1DocEditor.html#ae566f3ea306ab83755ec16965ab2979e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae566f3ea306ab83755ec16965ab2979e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dcf3919c9f9da37c2d269b279884f4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhw_1_1DocEditor.html#a9dcf3919c9f9da37c2d269b279884f4f">addLine</a> (const double x1, const double y1, const double x2, const double y2)</td></tr>
+<tr class="memdesc:a9dcf3919c9f9da37c2d269b279884f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">добавление линии  <a href="classhw_1_1DocEditor.html#a9dcf3919c9f9da37c2d269b279884f4f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9dcf3919c9f9da37c2d269b279884f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acccd4bab5f58cb27c056fa62838a1fc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhw_1_1DocEditor.html#acccd4bab5f58cb27c056fa62838a1fc9">addRect</a> (const double tlX, const double tlY, const double brX, const double brY)</td></tr>
+<tr class="memdesc:acccd4bab5f58cb27c056fa62838a1fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">добавление прямоугольника  <a href="classhw_1_1DocEditor.html#acccd4bab5f58cb27c056fa62838a1fc9">Подробнее...</a><br /></td></tr>
+<tr class="separator:acccd4bab5f58cb27c056fa62838a1fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbabe489cc4b42693bdc47b1646faf61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhw_1_1DocEditor.html#acbabe489cc4b42693bdc47b1646faf61">setDocument</a> (std::shared_ptr&lt; <a class="el" href="classhw_1_1Document.html">Document</a> &gt; doc)</td></tr>
+<tr class="separator:acbabe489cc4b42693bdc47b1646faf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3996c3e37661cb906d9cbfe6cb6ceb12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhw_1_1DocEditor.html#a3996c3e37661cb906d9cbfe6cb6ceb12">removeItem</a> (const std::size_t index)</td></tr>
+<tr class="memdesc:a3996c3e37661cb906d9cbfe6cb6ceb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">удаление элемента  <a href="classhw_1_1DocEditor.html#a3996c3e37661cb906d9cbfe6cb6ceb12">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3996c3e37661cb906d9cbfe6cb6ceb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>класс -контроллер для управления документом(моделью) </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a9dcf3919c9f9da37c2d269b279884f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dcf3919c9f9da37c2d269b279884f4f">&#9670;&nbsp;</a></span>addLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hw::DocEditor::addLine </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>добавление линии </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>координата x первой точки </td></tr>
+    <tr><td class="paramname">y1</td><td>координата y первой точки </td></tr>
+    <tr><td class="paramname">x2</td><td>координата x второй точки </td></tr>
+    <tr><td class="paramname">y2</td><td>координата y второй точки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acccd4bab5f58cb27c056fa62838a1fc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acccd4bab5f58cb27c056fa62838a1fc9">&#9670;&nbsp;</a></span>addRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hw::DocEditor::addRect </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>tlX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>tlY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>brX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>brY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>добавление прямоугольника </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tlX</td><td>верхняя левая координата x </td></tr>
+    <tr><td class="paramname">tlY</td><td>верхняя левая координата y </td></tr>
+    <tr><td class="paramname">brX</td><td>нижняя правая координата x </td></tr>
+    <tr><td class="paramname">brY</td><td>нижняя правая координата y </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae566f3ea306ab83755ec16965ab2979e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae566f3ea306ab83755ec16965ab2979e">&#9670;&nbsp;</a></span>exportToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hw::DocEditor::exportToFile </td>
+          <td>(</td>
+          <td class="paramtype">std::filesystem::path &amp;&amp;&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>экспорт документа в файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>имя файла экспорта </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, еслли экспорт произведён успешно, иначе - false </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhw_1_1DocEditor_ae566f3ea306ab83755ec16965ab2979e_cgraph.png" border="0" usemap="#aclasshw_1_1DocEditor_ae566f3ea306ab83755ec16965ab2979e_cgraph" alt=""/></div>
+<map name="aclasshw_1_1DocEditor_ae566f3ea306ab83755ec16965ab2979e_cgraph" id="aclasshw_1_1DocEditor_ae566f3ea306ab83755ec16965ab2979e_cgraph">
+<area shape="rect" title="экспорт документа в файл" alt="" coords="5,5,204,32"/>
+<area shape="rect" href="classhw_1_1SvgExporter.html#a8612a054317af5d5746c5e3343be55e5" title="чистовиртуальная функция реалзации экспорта в файл" alt="" coords="252,5,467,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaef042a3fd1b4b3984a682fbaf22e2e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef042a3fd1b4b3984a682fbaf22e2e2">&#9670;&nbsp;</a></span>importFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hw::DocEditor::importFromFile </td>
+          <td>(</td>
+          <td class="paramtype">std::filesystem::path &amp;&amp;&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhw_1_1DocEditor_aaef042a3fd1b4b3984a682fbaf22e2e2_cgraph.png" border="0" usemap="#aclasshw_1_1DocEditor_aaef042a3fd1b4b3984a682fbaf22e2e2_cgraph" alt=""/></div>
+<map name="aclasshw_1_1DocEditor_aaef042a3fd1b4b3984a682fbaf22e2e2_cgraph" id="aclasshw_1_1DocEditor_aaef042a3fd1b4b3984a682fbaf22e2e2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,224,32"/>
+<area shape="rect" href="namespacehw.html#ab95d9bc6e5f710c58bc2a75c648a871b" title="фабрика для создания импортера элементов графического документа по расширению файла" alt="" coords="272,5,412,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aacde10382984e7e7ec11142cb639dc8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacde10382984e7e7ec11142cb639dc8e">&#9670;&nbsp;</a></span>newDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classhw_1_1Document.html">Document</a> &gt; hw::DocEditor::newDocument </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создание нового документа </p>
+
+</div>
+</div>
+<a id="a3996c3e37661cb906d9cbfe6cb6ceb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3996c3e37661cb906d9cbfe6cb6ceb12">&#9670;&nbsp;</a></span>removeItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hw::DocEditor::removeItem </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>удаление элемента </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>порядковый номер элемента в документе </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если элемент удалён, иначе false </dd></dl>
+
+</div>
+</div>
+<a id="acbabe489cc4b42693bdc47b1646faf61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbabe489cc4b42693bdc47b1646faf61">&#9670;&nbsp;</a></span>setDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hw::DocEditor::setDocument </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classhw_1_1Document.html">Document</a> &gt;&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>/home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/doceditor/include/<a class="el" href="doceditor_8hpp_source.html">doceditor.hpp</a></li>
+<li>/home/runner/work/otus-cpp-2023-06-hw05/otus-cpp-2023-06-hw05/libs/doceditor/src/<a class="el" href="doceditor_8cpp.html">doceditor.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
