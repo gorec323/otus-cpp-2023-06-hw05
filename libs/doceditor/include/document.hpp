@@ -1,6 +1,5 @@
 #pragma once
 
-#include <memory>
 #include <graphicsitem.hpp>
 #include <behavioral/observable.hpp>
 
